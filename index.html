@@ -1,0 +1,116 @@
+<!<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        SEO 
+        Otimização para motores de busca
+    -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="author" content="Willian Sant Anna">
+    <meta name="creator" content="Nomeio Digital">
+    <meta name="description" content="Coleção de Bijoux da Helena Rocha">
+    <!-- 
+        Open Graph Redes Sociais 
+        https://ogp.me/
+    -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Helena Rocha Bijoux">
+    <meta property="og:title" content="Bijoux Helena Rocha">
+    <meta property="og:description" content="Coleção de Bijoux da Helena Rocha">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="http://www.nomeiodigital.com.br">
+    <title>Helena Rocha Bijoux</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 
+        BEM
+        http://getbem.com/introduction/
+    -->
+    <!-- 1. Cabeçalho -->
+    <!-- Editar o nome da classe se preferirem -->
+    <div class="banner">
+        <div class="cabecalho">
+            <!-- 1.1. Navegação -->
+            <!-- BLOCO -->
+            <nav class="navegacao">
+                <!-- ELEMENTO -->
+                <a class="navegacao__link" href="/">
+                    <img class="navegacao__logo" width="251" height="184" src="./imagens/logo.png">
+                </a>
+            </nav>
+            <figure class="cabecalho__descricao">
+                <!-- Descrição da Imagem -->
+                <img class="cabecalho__imagem-descricao" width="465" height="318" src="./imagens/text-header.png" alt="">
+                <figure class="cabecalho__descricao-imagem">
+                    <!-- Texto que a imagem representa. -->
+                </figure>
+            </figure>
+        </div>
+    </div>
+
+    <!-- 2. Sobre -->
+    <!-- BLOCO -->
+    <section class="sobre"><!-- 960px -->
+        <!-- ELEMENTO -->
+        <h1 class="sobre__titulo">Sobre</h1>
+        <div>
+            <h3>"Um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos"</h3>    
+            <!-- 
+                https://www.lipsum.com/ 
+                Textos fictícios...
+            -->
+            <p class="sobre__descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem corporis sit nobis, error tenetur magni beatae, ratione quod suscipit ipsam unde amet quam sapiente et voluptatibus, repellat id esse.</p>
+        </div>
+    </section>
+    <!-- 3. Redes sociais -->
+    <nav class="redes-sociais">
+        <h2 class="redes-sociais__titulo">Acompanhe nossas promoções<br>nas redes sociais</h2>
+        <!-- a.redes-sociais__link*3 -->
+        <a class="redes-sociais__link" target="_blank" href="https://www.facebook.com">
+            <!-- Descrição das imagens -->
+            <img class="redes-sociais__icones" width="53" height="53" src="./imagens/facebook.png" alt="Ícone logo Facebook">
+        </a>
+        <a class="redes-sociais__link" target="_blank" href="https://www.instagram.com" >
+            <img class="redes-sociais__icones" width="53" height="53" src="./imagens/intsagram.png" alt="Ícone logo Instagram">
+        </a>
+        <a class="redes-sociais__link" target="_blank" href="https://www.twitter.com">
+            <img class="redes-sociais__icones" width="53" height="53" src="./imagens/twitter.png" alt="Ícone logo Twitter">
+        </a>
+    </nav>
+    <!-- 4. Contatos -->
+    <div class="contato__imagem">        
+        <!-- BLOCO -->
+        <section class="contato">
+            <!-- ELEMENTO -->
+            <h1 class="contato__titulo">Contatos</h1>
+            <!-- BLOCO -->
+            <form class="formulario" action="/" method="GET">
+                <!-- ELEMENTO -->
+                <div class="formulario__linha">
+                    <label class="formulario__rotulo" for="nome">Nome</label>
+                    <input class="formulario__campos" type="text" name="nome" id="nome">
+                </div>
+                <div class="formulario__linha">
+                    <div class="formulario__coluna">
+                        <label class="formulario__rotulo" for="telefone">Telefone</label>
+                        <input class="formulario__campos" type="tel" name="telefone" id="telefone">
+                    </div>
+                    <div class="formulario__coluna">
+                        <label class="formulario__rotulo" for="email">E-mail</label>
+                        <input class="formulario__campos" type="email" name="email" id="email">
+                    </div>            
+                </div>
+                <div class="formulario__linha">
+                    <label class="formulario__rotulo" for="mensagem">Mensagem</label>
+                    <textarea class="formulario__area-texto" name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

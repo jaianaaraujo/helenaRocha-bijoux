@@ -1,0 +1,198 @@
+/*
+    https://www.fontsquirrel.com/tools/webfont-generator
+
+    Este site permite converter suas fontes 
+    em versões para internet.
+
+    Além de gerar as fontes, ele entrega esse script 
+    para importá-la para seu projeto.
+*/
+@font-face {
+    font-family: 'Onyx Regular';
+    src: url('./fontes/onyx-webfont.eot');
+    src: url('./fontes/onyx-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fontes/onyx-webfont.woff2') format('woff2'),
+         url('./fontes/onyx-webfont.woff') format('woff'),
+         url('./fontes/onyx-webfont.ttf') format('truetype'),
+         url('./fontes/onyx-webfont.svg#onyxregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+    Cores
+    Primária: #301a0f
+    Secundária: #8d8d8d
+*/
+
+/* Aplica em todos os elementos */
+* { 
+    box-sizing: border-box; /* Adicionar a margem interna e externa dentro do valor dos boxes */ 
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    background-image: url('./imagens/bg-header.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh; /* viewport height - altura da tela 100% altura */
+    /* vw viewport width = largura da tela */
+}
+
+.cabecalho {
+    /* 
+        margin: 50px auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: auto;
+        margin-left: auto; 
+    */
+    margin: 0 auto;
+    padding: 25px;
+    width: 960px;
+}
+
+.cabecalho__descricao {
+    margin-top: 100px;
+}
+
+.navegacao {
+    padding: 0 25px;
+}
+
+.navegacao__logo {
+
+}
+
+.sobre {
+    margin: 0 auto; /* Centralizar o container */
+    padding: 100px 0 200px;
+    width: 960px;
+}
+
+.sobre__titulo {
+    color: #301a0f;
+    font-family: 'Onyx Regular', sans-serif;
+    font-weight: 500; /* Peso da fonte 300 (light), 500 (regular), 700 (bold) negrito */
+    font-size: 60px;
+    text-transform: uppercase; /* Transforma o texto em caixa alta */
+    margin: 0 0 50px;
+}
+
+.sobre__citacao {
+    color: #301a0f;
+    float: left;
+    margin: 0;
+    width: 40%;
+}
+
+.sobre__descricao {
+    color: #301a0f;
+    float: left;
+    margin: 0;
+    padding: 0 25px;
+    width: 60%;
+}
+
+.redes-sociais {
+    background-color: #301a0f;
+    text-align: center;
+    padding: 25px 0;
+    /*
+        padding-top: 25px;
+        padding-botton: 25px;
+        padding-left: 0;
+        padding-right: 0;
+    */
+}
+
+.redes-sociais__titulo {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 0 10px;
+    /*
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    */
+}
+
+.redes-sociais__link {
+    text-decoration: none; /* Remove o underline dos link */
+}
+
+.redes-sociais__icones {
+    margin: 0 10px;
+}
+
+.contato {
+    margin: 0 auto; /* Centralizar o container */
+    padding: 100px 0;
+    text-transform: uppercase; /* Transforma o texto em caixa alta */
+    width: 960px;
+}
+
+.contato__imagem {
+    background-image: url('./imagens/bg-contatos.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 768px;
+}
+
+.contato__titulo {
+    color: #301a0f;
+    font-family: 'Onyx Regular', sans-serif;
+    font-weight: 500; /* Peso da fonte 300 (light), 500 (regular), 700 (bold) negrito */
+    font-size: 60px;
+    margin: 0 0 50px;
+}
+
+.formulario {
+    display: block;
+    max-width: 480px;
+}
+
+.formulario__linha {
+    display: block;
+    position: relative;
+    margin: 20px 0;
+    overflow: auto;
+}
+
+.formulario__coluna {
+    display: block;
+    float: left;
+    position: relative;
+    width: 50%;
+}
+
+.formulario__rotulo {
+    color: gray;
+    display: block;
+    font-size: 14px;
+    left: 15px;
+    position: absolute;
+    top: 10px;
+}
+
+.formulario__campos,
+.formulario__area-texto {
+    border: 1px solid lightgray;
+    display: block;
+    padding: 40px 15px 10px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* Gambiarra */
+.margin-direita {
+    padding-right: 20px;
+}
